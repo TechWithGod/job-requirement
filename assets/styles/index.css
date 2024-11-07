@@ -1,0 +1,159 @@
+body {
+    font-family:'League Spartan';
+}
+
+.header {
+    width:100%;
+    height:156px;
+    background-color: var(--desaturated-dark-cyan);
+}
+
+.header img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.card {
+    display:flex;
+    gap:2rem;
+    box-shadow:4px 4px 10px var(--desaturated-dark-cyan);
+    align-items: center;
+    flex-wrap:wrap;
+
+    padding:2rem;
+    margin-bottom:1rem;
+}
+
+
+.job-info {
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+
+    gap:0.8rem;
+    flex:2;
+}
+.trailing , .leading{
+    display:flex;
+    flex-wrap:wrap;
+
+    gap:1rem;
+    align-items: center;
+}
+
+.position {
+    font-size:0.9rem;
+}
+
+.trailing {
+    color:var(--dark-grayish-cyan);
+    font-size:0.9rem;
+}
+.languages {
+    display:flex;
+    gap:1rem;
+    flex-wrap:wrap;
+}
+
+.company {
+    color:var(--desaturated-dark-cyan);
+    font-size:1rem;
+}
+
+.featured , .new{
+    display: flex;
+    align-items:center;
+    background-color: var(--very-dark-grayish-cyan);
+    padding:0.3rem  0.4rem 0;
+    color:white;
+    border-radius:0.5rem;
+    font-size:1rem;
+}
+
+.new {
+    background-color: var(--desaturated-dark-cyan);
+}
+
+.jobs {
+    padding-top:4rem;
+    max-width:80%;
+    margin:0 auto;
+}
+
+.btn {
+    color:var(--desaturated-dark-cyan);
+    background-color: var(--light-grayish-cyan-bg);
+    padding:0.3rem;
+    border:none;
+    font-weight:bold;
+}
+
+
+
+.btn:hover {
+    cursor:pointer;
+}
+
+.search-bar {
+    display:none;
+    width:80%;
+    margin:0 auto;
+    display:flex;
+    padding:1rem 2rem;
+    background-color: white;
+    box-shadow:0px 4px 20px var(--desaturated-dark-cyan);
+    gap:2rem;
+    position:relative;
+    flex-wrap:wrap;
+
+}
+
+div#search-bar {
+    display:none;
+}
+.search-bar .query-container {
+    /* padding:0.5rem; */
+
+    display:flex;
+    background-color:var(--light-grayish-cyan-bg);
+    color:var(--dark-grayish-cyan);
+    gap:0.2rem;
+}
+
+.search-bar .query-text {
+    display:flex;
+    align-items:center;
+    padding-left:0.3rem;
+    padding-top:0.3rem;
+}
+
+.search-bar .cancel {
+    display:flex;
+    align-items:center;
+    font-size:1.5rem;
+    font-weight:bold;
+    color:white;
+    background-color:var(--dark-grayish-cyan);
+    padding:0.25rem 0.3rem 0;
+}
+.search-bar .cancel:hover {
+    background-color:var(--very-dark-grayish-cyan);
+    cursor:pointer;
+}
+
+div#search-bar.visible {
+    display:flex;
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+  .jobs {
+    max-width:98%;
+  }
+    .card {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
