@@ -126,6 +126,11 @@ div#search-bar {
     gap:0.2rem;
 }
 
+.clear-btn:hover {
+    cursor:pointer;
+    background-color: var(--desaturated-dark-cyan);
+    color:white;
+}
 .search-bar .query-text {
     display:flex;
     align-items:center;
