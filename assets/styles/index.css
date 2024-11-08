@@ -2,9 +2,7 @@ body {
     font-family:'League Spartan';
 }
 
-.clear-btn {
-    /* display:none; */
-}
+
 
 .clear-btn.visible {
     display:block;
@@ -163,4 +161,14 @@ div#search-bar.visible {
         justify-content: center;
     }
     
+}
+
+button:hover {
+    background-color: var(--desaturated-dark-cyan);
+    color:white;
+}
+
+div.position:hover {
+    color:var(--desaturated-dark-cyan);
+    cursor:pointer;
 }
