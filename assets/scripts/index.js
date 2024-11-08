@@ -250,11 +250,15 @@ function filterData() {
 
 
     });
+    searchBar.appendChild(clearBtn);
 }
 
 updateUI(data);
 clearBtn.addEventListener('click', () => {
+    queryData.length = 0; 
     searchBar.innerHTML = '';
-    updateUI(data);
-})
+    search.classList.remove('visible'); 
+    updateUI(data); 
+    searchBar.appendChild(clearBtn);
+});
 
